@@ -1,19 +1,19 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "FIXME"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: "FIXME"    # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # use YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # use YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: "FIXME"      # contact email address for workshop organizer, such as "grace@hopper.org"
-etherpad:         # optional (insert the URL for your Etherpad if you're using one)
+venue: " Confirm location of next meet-up with Study Group Co-ordinator"        # brief name of host site without address (e.g., "Euphoric State University")
+address: " "      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+country: " "      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "EN"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: " "       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
+humandate: " "    # human-readable date (e.g., "Feb 17-18, 2020")
+humantime: " "    # human-readable time (e.g., "9:00 am - 4:30 pm")
+startdate:        # use YYYY-MM-DD format like 2015-01-01
+enddate:          # use YYYY-MM-DD format like 2015-01-02
+instructor: ["Caroline Ajilgoba"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: [" "]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: " "      # contact email address for workshop organizer, such as "grace@hopper.org"
+etherpad:   http://pad.software-carpentry.org/nwu-mafikeng-r      # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 day1_am: "Data organization in spreadsheets and OpenRefine"
 day1_pm: "Introduction to R"
@@ -36,6 +36,8 @@ day2_pm: "SQL for data management"
   are not using Eventbrite, or leave it in, since it will not be
   displayed if the 'eventbrite' field in the header is not set.
 -->
+
+<!--
 {% if page.eventbrite %}
 <iframe
   src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
@@ -45,7 +47,7 @@ day2_pm: "SQL for data management"
   scrolling="auto">
 </iframe>
 {% endif %}
-
+-->
 <h2>General Information</h2>
 
 <!--
@@ -55,16 +57,13 @@ day2_pm: "SQL for data management"
   the pitch.
 -->
 <p>
-<a href=http://datacarpentry.org>Data Carpentry</a> workshops are for any researcher 
-who has data they want to analyze, and no prior computational experience is required. 
-This hands-on workshop teaches basic concepts, skills and tools for working more 
-effectively with data. 
-</p>
-<p>
-We will cover {{page.day1_am}}, {{page.day1_pm}}, {{page.day2_am}} and {{page.day2_pm}}.
+The Mafikeng R Study Group are open for any researcher and student who has data they want to analyze. No prior computational experience is required. In these hands-on study group sessions we will work through basic concepts, learn new skills and tools together that can help us to work more effectively with our data.
 
-Participants should bring their laptops and plan to participate actively. By the end of the workshop learners should be able to more effectively manage and analyze data and be able to apply the tools and approaches directly to their ongoing research.
+We will primarily cover R-related topics but also include discussion relating to other topics that is part of the research life cycle.
+
+We want to build a community that can manage and analyze their data more effectively and be able to apply the tools and approaches directly to their ongoing research.
 </p>
+
 
 <!--
   AUDIENCE
@@ -75,6 +74,8 @@ Participants should bring their laptops and plan to participate actively. By the
 <p>
   <strong>Who:</strong>
   The course is aimed at graduate students and other researchers.
+
+
 </p>
 
 <!--
@@ -89,10 +90,8 @@ Participants should bring their laptops and plan to participate actively. By the
 <p>
   <strong>Where:</strong>
   {{page.address}}.
-  Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
+  To be confirmed before each meet-up. Contact the study group co-ordinator.
+
 </p>
 {% endif %}
 
@@ -102,13 +101,12 @@ Participants should bring their laptops and plan to participate actively. By the
   Modify the block below if there are any special requirements.
 -->
 <p>
-  <strong>Requirements:</strong> Participants must bring a laptop with a 
-  Mac, Linux, or Windows operating sytem (not a tablet, Chromebook, etc.) that they have administrative privileges
-  on. They should have a few specific software packages installed (listed
-  <a href="#setup">below</a>). They are also required to abide by
-  Data Carpentry's
-  <a href="{{site.dc_site}}/code-of-conduct/">Code of Conduct</a>.
-</p>
+  <strong>Requirements:</strong> Participants must, if possible, bring a laptop with a Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed below). They are also required to abide by Data Carpentry's Code of Conduct. <a href="{{site.dc_site}}/code-of-conduct/">Code of Conduct</a>.
+
+Contact: Please mail Caroline Ajilogba for more information at carolfadeke (at) gmail (dot) com
+
+ 
+  </p>
 
 <!--
   CONTACT EMAIL ADDRESS
