@@ -1,3 +1,6 @@
+Welcome to R study group, North-West University Mafikeng campus :tada: :heart:
+In this repository,we will send data to work on and analysed data from individuals
+Read more about our group [here](https://rstudygroup.wordpress.com/)
 =======
 
 This repository is the [Data Carpentry](http://datacarpentry.org)
